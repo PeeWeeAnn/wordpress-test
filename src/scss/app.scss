@@ -1,0 +1,20 @@
+@import "./variables";
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-family: "Muller-Trial", sans-serif;
+    color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Muller", sans-serif;
+    font-size: 20px;
+}
