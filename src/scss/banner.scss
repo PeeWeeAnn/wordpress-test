@@ -1,7 +1,6 @@
+@import "./variables";
+
 .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 1400px;
     height: 360px;
     background: #1b3f5a;
@@ -12,8 +11,16 @@
 
     &__image {
         position: relative;
-        left: 130px;
+        left: 100px;
     }
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1400px;
+    height: 360px;
 }
 
 .banner-information {
@@ -21,6 +28,7 @@
     flex-direction: column;
     gap: 20px;
     width: 450px;
+    margin: 0 0 0 50px;
 
     &__breadcrumbs {
         width: 682px;
