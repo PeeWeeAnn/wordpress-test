@@ -38,7 +38,10 @@
         line-height: 140%;
         opacity: 0.5;
     }
-    &__email {
+}
+
+.mailing-list-information-email {
+    &__input {
         font-size: 24px;
         line-height: 140%;
         color: $text;
@@ -50,6 +53,21 @@
         padding: 0 0 0 30px;
         margin: 20px 0 0 0;
         outline: none;
+    }
+
+    &__button {
+        position: relative;
+        bottom: 57px;
+        left: 467px;
+        width: 130px;
+        height: 54px;
+        border-radius: 155px;
+        border: none;
+        background: $primary;
+        color: $white;
+        font-size: 14px;
+        line-height: 140%;
+        cursor: pointer;
     }
 }
 

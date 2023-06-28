@@ -1,1 +1,207 @@
 @import "./variables.scss";
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 515px;
+    background-color: $primary;
+    margin: 100px 0 0 0;
+    padding: 100px 0 35px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1164px;
+}
+
+.footer-block-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__header {
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        opacity: 0.5;
+    }
+
+    &__button {
+        width: 209px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 155px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.footer-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__item {
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        list-style-type: none;
+    }
+}
+
+.footer-other-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.other-contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__header {
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        opacity: 0.5;
+    }
+}
+
+.other-contact-block-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__item {
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        list-style-type: none;
+    }
+}
+
+.footer-contact-you {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 110%;
+        color: $white;
+    }
+}
+
+.contact-you-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        opacity: 0.5;
+    }
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__label {
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        opacity: 0.5;
+    }
+
+    &__input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        outline: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: $white;
+    }
+
+    &__select {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        outline: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: $white;
+        cursor: pointer;
+
+        option {
+            background-color: $primary;
+        }
+    }
+
+    &__button {
+        width: 135px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 140%;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 155px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.form-item-submit {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    label {
+        width: 268px;
+    }
+}
+
+.footer-terms-contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__text {
+        color: $white;
+        font-size: 14px;
+        line-height: 140%;
+        opacity: 0.5;
+    }
+
+    &__social {
+        display: flex;
+        gap: 24px;
+    }
+}

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style.css'>
-    <title></title>
+    <title>Обеспечение безопасности</title>
 </head>
 
 <body>
@@ -101,18 +101,36 @@
                 <h2 class="our-clients__header">
                     Наши клиенты
                 </h2>
-                <div class="our-clients__swiper our-clients-swiper">
-                    <div class="our-clients-swiper__item">
-                        <img src="./img/tele2.png" alt="Tele 2">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/tele2.png" alt="Tele 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/continent.png" alt="Континент">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/stk.png" alt="СТК">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/gpntb.png" alt="ГПНТБ СО РАН">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/tele2.png" alt="Tele 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/continent.png" alt="Континент">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/stk.png" alt="СТК">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/gpntb.png" alt="ГПНТБ СО РАН">
+                        </div>
                     </div>
-                    <div class="our-clients-swiper__item">
-                        <img src="./img/continent.png" alt="Континент">
+                    <div class="swiper-button-prev">
                     </div>
-                    <div class="our-clients-swiper__item">
-                        <img src="./img/stk.png" alt="СТК">
-                    </div>
-                    <div class="our-clients-swiper__item">
-                        <img src="./img/gpntb.png" alt="ГПНТБ СО РАН">
+                    <div class="swiper-button-next">
                     </div>
                 </div>
             </div>
@@ -129,7 +147,10 @@
                     <p class="mailing-list-information__text">
                         Чтобы узнавать о новых предложениях
                     </p>
-                    <input class="mailing-list-information__email" type="email" placeholder="Email">
+                    <div class="mailing-list-information__email mailing-list-information-email">
+                        <input class="mailing-list-information-email__input" type="email" placeholder="Email">
+                        <input class="mailing-list-information-email__button" type="submit">
+                    </div>
                 </div>
                 <div class="mailing-list__image mailing-list-image">
                     <img class="mailing-list-image__img" src="./img/security.png" alt="">
@@ -142,77 +163,154 @@
     <footer class="footer">
         <div class="_container">
             <div class="footer-wrapper">
-                <div class="footer__services footer-services">
-                    <h5 class="footer-services__header">
-                        Услуги
-                    </h5>
-                    <ul class="footer-services__list footer-services-list">
-                        <li class="footer-services-list__item">
-                            Охранная сигнализация
-                        </li>
-                        <li class="footer-services-list__item">
-                            Тревожная сигнализация
-                        </li>
-                        <li class="footer-services-list__item">
-                            Пожарная безопасность
-                        </li>
-                        <li class="footer-services-list__item">
-                            Системы видеонаблюдения
-                        </li>
-                        <li class="footer-services-list__item">
-                            Физическая охрана
-                        </li>
-                        <li class="footer-services-list__item">
-                            Диспетчеризация
-                        </li>
-                        <li class="footer-services-list__item">
-                            Система СКУД
-                        </li>
-                    </ul>
-                    <button class="footer-services__button">
-                        Написать в WhatsApp
-                    </button>
-                </div>
-                <div class="footer__other-contact footer-other-contact">
-                    <div class="footer-other-contact__block other-contact-block">
-                        <h5 class="other-contact-block__header">
-                            Прочее
+                <div class="footer-block">
+                    <div class="footer__services footer-services">
+                        <h5 class="footer-services__header">
+                            Услуги
                         </h5>
-                        <ul class="other-contact-block__list other-contact-block-list">
-                            <li class="other-contact-block-list__item">
-                                О компании
+                        <ul class="footer-services__list footer-services-list">
+                            <li class="footer-services-list__item">
+                                Охранная сигнализация
                             </li>
-                            <li class="other-contact-block-list__item">
-                                Вопросы
+                            <li class="footer-services-list__item">
+                                Тревожная сигнализация
                             </li>
-                            <li class="other-contact-block-list__item">
-                                Контакты
+                            <li class="footer-services-list__item">
+                                Пожарная безопасность
                             </li>
-                            <li class="other-contact-block-list__item">
-                                Вакансии
+                            <li class="footer-services-list__item">
+                                Системы видеонаблюдения
+                            </li>
+                            <li class="footer-services-list__item">
+                                Физическая охрана
+                            </li>
+                            <li class="footer-services-list__item">
+                                Диспетчеризация
+                            </li>
+                            <li class="footer-services-list__item">
+                                Система СКУД
                             </li>
                         </ul>
+                        <button class="footer-services__button">
+                            Написать в WhatsApp
+                        </button>
                     </div>
-                    <div class="footer-other-contact__block other-contact-block">
-                        <h5 class="other-contact-block__header">
-                            Связаться
-                        </h5>
-                        <ul class="other-contact-block__list other-contact-block-list">
-                            <li class="other-contact-block-list__item">
-                                +7 383 258-33-00
-                            </li>
-                            <li class="other-contact-block-list__item">
-                                info@block54.ru
-                            </li>
-                        </ul>
+                    <div class="footer__other-contact footer-other-contact">
+                        <div class="footer-other-contact__block other-contact-block">
+                            <h5 class="other-contact-block__header">
+                                Прочее
+                            </h5>
+                            <ul class="other-contact-block__list other-contact-block-list">
+                                <li class="other-contact-block-list__item">
+                                    О компании
+                                </li>
+                                <li class="other-contact-block-list__item">
+                                    Вопросы
+                                </li>
+                                <li class="other-contact-block-list__item">
+                                    Контакты
+                                </li>
+                                <li class="other-contact-block-list__item">
+                                    Вакансии
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-other-contact__block other-contact-block">
+                            <h5 class="other-contact-block__header">
+                                Связаться
+                            </h5>
+                            <ul class="other-contact-block__list other-contact-block-list">
+                                <li class="other-contact-block-list__item">
+                                    +7 383 258-33-00
+                                </li>
+                                <li class="other-contact-block-list__item">
+                                    info@block54.ru
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__contact-you footer-contact-you">
+                        <h2 class="footer-contact-you__header">
+                            Мы можем связаться с вами
+                        </h2>
+                        <div class="footer-contact-you__data contact-you-data">
+                            <form class="contact-you-data__form contact-you-data-form" action="">
+                                <div class="contact-you-data-form__item form-item">
+                                    <label for="name" class="form-item__label">
+                                        Ваше имя*
+                                    </label>
+                                    <input id="name" class="form-item__input" type="text">
+                                </div>
+                                <div class="contact-you-data-form__item form-item">
+                                    <label for="question" class="form-item__label">
+                                        Тип вопроса
+                                    </label>
+                                    <select id="question" name="question" class="form-item__select" required="required">
+                                        <option value="question-1">
+                                            Мне нужна консультация
+                                        </option>
+                                        <option value="question-2">
+                                            Мне нужно перезвонить
+                                        </option>
+                                        <option value="question-3">
+                                            Хочу подробнее узнать о ваших услугах
+                                        </option>
+                                        <option value="question-4">
+                                            Другое
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="contact-you-data-form__item form-item">
+                                    <label for="phone" class="form-item__label">
+                                        Телефон*
+                                    </label>
+                                    <input id="phone" class="form-item__input" type="tel">
+                                </div>
+                                <div class="contact-you-data-form__item form-item">
+                                    <label for="time" class="form-item__label">
+                                        Удобное время для звонка
+                                    </label>
+                                    <select name="time" id="time" class="form-item__select" required="required">
+                                        <option value="time-1">
+                                            Сейчас
+                                        </option>
+                                        <option value="time-2">
+                                            Через час
+                                        </option>
+                                        <option value="time-3">
+                                            Завтра до полудня
+                                        </option>
+                                        <option value="time-4">
+                                            Завтра после полудня
+                                        </option>
+                                    </select>
+                                </div>
+                                <p class="contact-you-data-form__text">
+                                    * - обязательное поле
+                                </p>
+                                <div class="contact-you-data-form__item form-item form-item-submit">
+                                    <input class="form-item__button" type="submit">
+                                    <label for="time" class="form-item__label">
+                                        Нажимая «Отправить» вы соглашаетесь с обработкой персональных данных
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="footer__contact-you footer-contact-you">
-                    <h2 class="footer-contact-you__header">
-                        Мы можем связаться с вами
-                    </h2>
-                    <div class="footer-contact-you__data contact-you-data">
-                        im
+                <div class="footer-block-bottom">
+                    <div class="footer__terms-contacts footer-terms-contacts">
+                        <p class="footer-terms-contacts__text">
+                            ©2022 Блок 54. Все авторские права защищены
+                        </p>
+                        <p class="footer-terms-contacts__text">
+                            Политика конфендициальности
+                        </p>
+                        <div class="footer-terms-contacts__social">
+                            <img src="./img/icons/insta.svg" alt="Instagram">
+                            <img src="./img/icons/vk.svg" alt="ВКонтакте">
+                            <img src="./img/icons/facebook.svg" alt="Facebook">
+                        </div>
                     </div>
                 </div>
             </div>

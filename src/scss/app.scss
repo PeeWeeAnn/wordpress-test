@@ -5,6 +5,7 @@
 @import "./mailing-list";
 @import "./our-clients";
 @import "./footer";
+@import "swiper/scss";
 
 html {
     overflow-x: hidden;
@@ -43,6 +44,10 @@ button {
     line-height: 140%;
     cursor: pointer;
     border: none;
+}
+
+input {
+    font-family: "Muller", sans-serif;
 }
 
 ul {
